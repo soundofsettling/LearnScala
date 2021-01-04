@@ -1,5 +1,8 @@
 package recfuncs
 
+import org.junit.Assert.assertEquals
+import org.junit._
+
 class RecFunSuite {
   import RecFuncs._
 
