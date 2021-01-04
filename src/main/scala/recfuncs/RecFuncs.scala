@@ -1,6 +1,6 @@
-package recfun
+package recfuncs
 
-object RecFun extends RecFunInterface {
+object RecFuncs extends RecFuncsInterface {
 
   def main(args: Array[String]): Unit = {
     println("Pascal's Triangle")

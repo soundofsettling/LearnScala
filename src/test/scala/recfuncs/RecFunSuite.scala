@@ -1,7 +1,7 @@
-package recfun
+package recfuncs
 
 class RecFunSuite {
-  import RecFun._
+  import RecFuncs._
 
   // ------ balance tests -----------------------------------------------------
 
