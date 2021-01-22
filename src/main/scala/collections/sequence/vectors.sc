@@ -21,6 +21,11 @@ pairs.unzip
 aStringIsASequenceLikeStructure flatMap (c => List('.', c))
 
 
+val r: Range = 1 until 5
+val s: Range = 1 to 5
+1 to 10 by 3
+6 to 1 by -2
+
 // to list all combinations of numbers x and y where
 // x is drawn from 1..M and
 // y is drawn from 1..N
@@ -28,3 +33,9 @@ def combinations(M: Int, N: Int) =
   (1 to M) flatMap (x => (1 to N) map (y => (x, y)))
 
 combinations(3, 5)
+
+def isPrimeNumber(n: Int): Boolean =
+  (2 until n) forall (x => n%x != 0)
+
+isPrimeNumber(27)
+isPrimeNumber(37)
