@@ -39,3 +39,6 @@ def isPrimeNumber(n: Int): Boolean =
 
 isPrimeNumber(27)
 isPrimeNumber(37)
+
+val aWord = "theCHAINsmokers"
+aWord.toLowerCase.groupBy((x: Char) => x).mapValues(_.length).toList
