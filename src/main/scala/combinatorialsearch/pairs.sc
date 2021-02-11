@@ -23,3 +23,18 @@ for {
 
 def scalarProduct(xs: List[Double], ys: List[Double]): Double =
   (for( (x,y) <- xs zip ys ) yield x * y).sum
+
+
+def forComprehension(M: Int, N: Int): Unit = {
+  for {
+    x <- 1 to M
+    y <- 1 to N
+  } yield (x,y)
+}
+
+forComprehension(9, 4)
+
+for {
+  x <- 1 to 9
+  y <- 1 to 4
+} yield (x,y)
